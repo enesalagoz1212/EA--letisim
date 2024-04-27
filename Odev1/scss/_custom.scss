@@ -1,0 +1,26 @@
+.card {
+    transition: all .7s;
+
+        &:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 0 10px 10px $info;
+        }
+    }
+    .rotating-img {
+        animation: scaleAnimation 6s linear infinite alternate;
+      }
+      
+      @keyframes scaleAnimation {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.5);
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .navbar-brand img {
+          width: 80%;
+        }
+      }
+ 
